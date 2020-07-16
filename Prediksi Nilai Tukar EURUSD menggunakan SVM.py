@@ -106,7 +106,7 @@ y = np.array(y_scaledprice)
 y_price = y.flatten()
 
 #split data to 75% for train data and 25% for test data 
-x_train,x_test,y_train,y_test = train_test_split(x_scaledprice,y_price,test_size=0.25,random_state=None)
+x_train,x_test,y_train,y_test = train_test_split(x_scaledprice,y_price,test_size=0.25,random_state=None, shuffle=False)
 
 
 # In[10]:
